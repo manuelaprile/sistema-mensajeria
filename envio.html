@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/verificar.js"></script>
+    <script src="js/enviar.js"></script>
+    <title>Envío</title>
+</head>
+<body>
+    <div class="nav-contenedor">                               
+            <nav>
+                <ion-icon name="mail-outline" size="large" class="msj"></ion-icon>
+                <h3>SENDING</h3>             
+                <ul>
+                    <li>
+                        <a href="mensajes.html">Mensajes</a>
+                    </li>
+                    <li>
+                        <a href="envio.html">Envío</a>
+                    </li>
+                    <li>
+                        <a href="buscar.html">Buscar</a>
+                    </li>
+                </ul>
+            </nav>
+        <header>
+            <div class="nav-header">
+                <h3 class="encabezado-mensajes">Envío</h3>
+                <hr> 
+            </div>
+        </header>
+        <section class="envio-seccion">                          
+                <form action="#" class="envio" id="envio" novalidate enctype="multipart/form-data">
+                    <div class="label-contenedor" style="width: 30%; display: inline-block;">
+                        <label id="label1" class="encabezado-mensajes">Para</label>
+                    </div>
+                    <div class="combobox">
+                        <select id="idcontacto">
+                        </select>
+                    </div>                             
+                    <div style="width: 50%; display: inline-block; margin-top: 20px;">
+                        <label id="label2" class="encabezado-mensajes">Mensaje</label>
+                    </div>
+                    <div id="texto">
+                        <textarea name="" id="enviar" cols="105" rows="10"></textarea>  
+                    </div>                                           
+                    <button class="button-enviar"  type="submit">Enviar</button>
+                </form>         
+        </section>                                                
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </div>
+</body>
+</html>
